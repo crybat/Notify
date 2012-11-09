@@ -1,4 +1,4 @@
-# Notify
+# Notify 2.0
 
 Many Applications and Modules need to deliver messages to the user, and there is no uniformity on how that is done.
 It's the developer's job to tweek all those notifications and views of different modules to make, if possible, a unified look.
