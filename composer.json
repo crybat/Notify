@@ -17,7 +17,7 @@
 			"email"   :"ando@sqroot.eu",
 			"homepage":"http://sqroot.eu",
 			"role"    :"Developer"
-		},
+		}
 	],
 	"require"    :{
 		"php"                :">=5.4.0",
