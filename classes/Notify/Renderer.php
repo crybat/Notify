@@ -1,3 +1,2 @@
 <?php defined('SYSPATH') or die('No direct script access.');
-
-class Notify extends Kohana_Notify {}
+interface Notify_Renderer extends Kohana_Notify_Renderer {}

@@ -7,12 +7,6 @@
 	"license"    :"MIT",
 	"authors"    :[
 		{
-			"name"    :"Ricardo de Luna",
-			"email"   :"kaltar@kaltar.org",
-			"homepage":"http://kaltar.org",
-			"role"    :"Developer"
-		},
-		{
 			"name"    :"Ando Roots",
 			"email"   :"ando@sqroot.eu",
 			"homepage":"http://sqroot.eu",
