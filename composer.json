@@ -1,9 +1,9 @@
 {
-	"name"       :"anroots/notify",
+	"name"       :"crybat/notify",
 	"type"       :"kohana-module",
 	"description":"A simple Kohana 3 module designed to capture messages from different methods and modules to be displayed later with a unified look and feel.",
 	"keywords"   :["kohana", "flash message", "messaging", "notify"],
-	"homepage"   :"https://github.com/anroots/Notify",
+	"homepage"   :"https://github.com/crybat/Notify",
 	"license"    :"MIT",
 	"authors"    :[
 		{
@@ -20,7 +20,7 @@
 		}
 	],
 	"require"    :{
-		"php"                :">=5.4.0",
+		"php"                :">=5.3.3",
 		"composer/installers":"*"
 	}
 }
