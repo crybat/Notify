@@ -115,7 +115,7 @@ class Notify_Core
 
 			self::$msgs[$type][] = $msg;
 
-			// If we haven't assigned a value for $persistent_messages		
+			// If we haven't assigned a value for $persistent_messages
 			if (is_null(self::$persistent_messages)) {
 				// Get value from config file
 				self::restore_persistent_messages();
@@ -261,7 +261,7 @@ class Notify_Core
 			$vars = array('msgs' => self::$msgs);
 		}
 
-		// Render the view		
+		// Render the view
 		$messages = View::factory(self::$view, $vars)->render();
 
 		// Return the rendered messages
@@ -347,7 +347,7 @@ class Notify_Core
 	{
 		$msg_count = 0;
 
-		// If requested a especific message type.	
+		// If requested a especific message type.
 		if (! empty($type) AND array_key_exists($type, self::$msgs)) {
 			$msg_count = count(self::$msgs[$type]);
 		} else if (empty($type)) {
@@ -374,6 +374,20 @@ class Notify_Core
 
 		return self::$instance;
 	}
+
+    /**
+     * Sets messages from Validation object
+     *
+     * @param Validation $validation
+     * @param string $file
+     * @param string $type
+     */
+    public static function msgFromValidation($validation, $file = NULL, $type = Notify::ERROR)
+    {
+        foreach ($validation->errors($file) as $error => $msg) {
+            Notify::msg($msg, $type);
+        }
+    }
 
 	final private function __construct()
 	{
